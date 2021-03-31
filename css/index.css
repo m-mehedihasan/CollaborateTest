@@ -1,0 +1,111 @@
+/* css file for single price grid component */
+
+:root {
+    --primary: #0f8c80;
+    --primary-light: #1bb3a4;
+    --secondary: #7b9611;
+    --secondary-light: #acd40f;
+    --light: #ffffff;
+    --very-dark: #000000;
+    --dark: #0f0f0f;
+    --light-gray: #f1f1f1;
+    --max: 2.5em;
+    --medium: 1.2em;
+    --small: 0.8em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* setting up base font size */
+html {
+    font-size: 1.2rem;
+}
+body {
+     font-family: 'PT Sans', sans-serif;
+     background-color: var(--light-gray);
+}
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: var(--light);
+}
+.head {
+    padding: 2em;
+}
+.head h1 {
+    font-size: var(--max);
+    color: var(--primary);
+    margin-bottom: 0.5em; 
+}
+.head h3 {
+    color: var(--secondary);
+}
+.head p {
+    color: gray;
+}
+.head .description {
+    margin-top: 1em;
+}
+.price-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    width: 100%;
+    background: var(--primary);
+}
+.desc {
+    width: 100%;
+    background-color: var(--primary-light);
+}
+
+.price, .desc {
+    padding: 1.5em;
+    color: var(--light);
+}
+ul {
+    list-style: none;
+}
+ul li {
+    color: var(--light-gray);
+    font-size: 0.8em;
+}
+
+.btn {
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-signup {
+    background-color: var(--secondary-light);
+    color: var(--light);
+    width: 230px;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 0.5em 2em;
+    margin-top: 2em;
+}
+.price h2 {
+    font-size: var(--medium)
+}
+.price h4 {
+    color: var(--light-gray);
+}
+.price span {
+    color: white;
+    font-size: 2em;
+    margin-right: 0.4em;
+}
+.price h5 {
+    margin: 0.5em 0em;
+}
+.desc h2 {
+    font-size: var(--medium);
+    margin-bottom: 0.5em;
+}
